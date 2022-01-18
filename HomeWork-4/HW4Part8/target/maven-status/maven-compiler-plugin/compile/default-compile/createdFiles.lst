@@ -1,0 +1,4 @@
+com\mycompany\hw4p8\service\UserLookupService.class
+com\mycompany\hw4p8\pojo\User.class
+META-INF\spring.components
+com\mycompany\hw4p8\controller\UserController.class

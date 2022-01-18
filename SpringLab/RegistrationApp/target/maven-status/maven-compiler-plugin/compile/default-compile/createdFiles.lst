@@ -1,0 +1,4 @@
+com\me\pojo\User.class
+META-INF\spring.components
+RegistrationServlet.class
+com\me\controller\RegistrationServlet.class

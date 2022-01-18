@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<!-- html head section starts here-->
+
+<head>
+  <title>Tuition Waiver Form</title>
+</head>
+<!-- head end-->
+<!-- html body starts here-->
+
+<body>
+  <h2 style="text-align:center">Northeastern University Human Resources - Tuition Waiver Form </h2>
+  <fieldset> This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and
+    their dependents.
+    All full-time faculty and staff should use the online Tuition Waiver Form found on myNEU. Before completing this
+    form,
+    please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent Certification Form along with
+    the submission of this form for any dependent children.</fieldset>
+  <form action="tuitionform" method="post">
+    <div>
+      <h3 style="color:#ff0000">Section 1</h3>
+      <!-- Drop down to select the Academic Term-->
+      Academic Term:
+      <select name="acadterm">
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+      </select>
+      <p><i>*Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer
+          sessions I and
+          II are considered one academic term.</i></p>
+      Academic Year: <input type="text" name="acadyr" /> <br> <br>
+
+      <!-- check box for employee status-->
+      Employee Status:
+      <input type="checkbox" name="empstatus" value="p/tstaff" />P/T Staff
+      <input type="checkbox" name="empstatus" value="p/tfaculty" />P/T Faculty
+      <input type="checkbox" name="empstatus" value="retiree" />Retiree
+      <input type="checkbox" name="empstatus" value="other" />Other
+    </div>
+
+    <div>
+      <h3 style="color:#ff0000">Section 2</h3>
+      Student's Name:<input type="text" name="studentname" /> <br> <br>
+      Relationship to Employee:<input type="text" name="relationship" /> <br> <br>
+      Student's NUID:<input type="text" name="studentnuid" /> <br> <br>
+      Employee's Name:<input type="text" name="empname" /> <br> <br>
+      Employee's Id:<input type="text" name="empid" /> <br> <br>
+      Department:<input type="text" name="dept" /> <br> <br>
+      Campus Location:<input type="text" name="campus" /> <br> <br>
+      Phone Number:<input type="text" name="phone" /> <br> <br>
+      Supervisor's Name:<input type="text" name="supervisorname" />
+    </div>
+
+    <div>
+      <h3 style="color:#ff0000">Section 3 </h3><b><i style="color:#0000ff"> Indicate the applicable school or
+          program:</i></b> <br> <br>
+      School or Program
+      <select name="program">
+        <option value="ugprog">Undergraduate Program</option>
+        <option value="law">Law School </option>
+        <option value="doctoral">Doctoral Candidate</option>
+        <option value="cps">College of Professional Studies Undergraduate</option>
+        <option value="grads">Graduate School </option>
+        <option value="cpsgrad">College of Professional Studies Graduate School</option>
+      </select> <br> <br>
+      <fieldset style="background-color:#EBE4DF">One course per academic term may be taken one-half hour before the end
+        of your workday. If this applies to you, this
+        form must be signed by your supervisor below and approved by Human Resources Management. </fieldset><br>
+      <br>
+      <fieldset style="background-color:#EBE4DF">Complete the following course information. If you are an employee
+        taking a job related course, please attach the Job
+        Related Designation Form to this waiver.</fieldset>
+      </br>
+      Course No:<input type="text" name="courseno" /> <br> <br>
+      Course Name:<input type="text" name="coursename" /> <br> <br>
+      Supervisor Signature:<input type="text" name="supervisorsign" /> <br> <br>
+      Credit Hrs:<input type="text" name="credithrs" /> <br> <br>
+      Day:<input type="text" name="day" /> <br> <br>
+      Time(a.m/p.m):<input type="text" name="time" />
+
+      <br> <br>
+      Course No:<input type="text" name="courseno" /> <br> <br>
+      Course Name:<input type="text" name="coursename" /> <br> <br>
+      Supervisor Signature:<input type="text" name="supervisorsign" /> <br> <br>
+      Credit Hrs:<input type="text" name="credithrs" /> <br> <br>
+      Day:<input type="text" name="day" /> <br> <br>
+      Time(a.m/p.m):<input type="text" name="time" />
+
+
+    </div>
+
+    <div>
+      <h3 style="color:#ff0000">Section 4 </h3>
+      <p><em>In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that I
+          am
+          currently enrolled in the above courses, or that the student listed above is my spouse, domestic partner or
+          unmarried dependent child or the dependent child of my domestic partner as defined under current IRS tax
+          regulations. I also certify that I have read the Tuition Waiver Program Guidelines.</em> </p>
+      </br>
+      Employee Signature:<input type="text" name="empsign" /> <br> <br>
+
+      Date:<input type="text" name="empdate" />
+
+    </div>
+    <div>
+      <h3 style="color:#ff0000">Section 5 </h3>
+      HRM Approval:<input type="text" name="hrmapproval" /> <br> <br>
+
+      Date:<input type="text" name="hrmdate" />
+    </div>
+    <br> <br>
+    <fieldset style="background-color:#EBE4DF">Forms will be reviewed for completeness and eligibility. You will be
+      notified if any additional information is needed. Mail completed form to
+      Human Resources, 250 Columbus Place or fax to (617) 373-7610. All waivers must be received by HRM within 30 days
+      of the course start date. </fieldset>
+    <br> <br>
+    <!-- submit button to submit the form-->
+    <input type="submit" value="Submit" style="color:red" />
+  </form>
+</body>
+<!-- body ends here-->
+
+</html>

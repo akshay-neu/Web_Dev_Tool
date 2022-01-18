@@ -1,0 +1,18 @@
+out.println("<!doctype HTML>");
+out.println("<html>");
+out.println("<head>");
+out.println("<title>Online Quiz</title>");
+out.println("</head>");
+out.println("<body>");
+out.println("<h1>Session ID: " + session.getId() + "</h1>");
+out.println("<h1>Question 2: An object could be ...</h1>");
+out.println("<form action='quiz/q2' method='get'>");
+out.println("<input type='radio' name='question' value='a' checked/> anything<br/>");
+out.println("<input type='radio' name='question' value='b' /> an algorithm<br/>");
+out.println("<input type='radio' name='question' value='c' /> a data container<br/>");
+out.println("<input type='radio' name='question' value='d' /> a program<br/>");
+out.println("<input type='hidden' name='qn' value='2' />");
+out.println("<input type='submit' value='SEND ANSWER'/>");
+out.println("</form>");
+out.println("</body>");
+out.println("</html>");

@@ -1,0 +1,6 @@
+META-INF\spring.components
+edu\neu\dao\DAO.class
+edu\neu\pojo\Movie.class
+edu\neu\dao\MovieDAO.class
+edu\neu\validation\MovieValidator.class
+edu\neu\controller\MovieController.class

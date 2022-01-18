@@ -1,0 +1,17 @@
+<web-app>
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>GetXMethodsHeader</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/header.html</url-pattern>
+	</servlet-mapping>	
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>header.html</welcome-file>
+	</welcome-file-list>
+</web-app>

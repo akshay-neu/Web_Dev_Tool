@@ -1,0 +1,4 @@
+com\mycompany\part4\dao\MovieDAO.class
+com\mycompany\part4\dao\DAO.class
+com\mycompany\part4\pojo\MovieBean.class
+com\mycompany\part4\controller\MovieController.class

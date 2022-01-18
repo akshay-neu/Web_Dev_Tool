@@ -1,0 +1,35 @@
+protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        
+        HttpSession session = request.getSession(true); //if session already exists, use it; if session has not been created, create a new one
+        
+        String qn = request.getParameter("qn");
+        
+        if (qn.equals("1")) {
+            //question 1 has been submitted
+            //read answer 1
+            //show question 2
+            
+            
+        } else if (qn.equals("2")) {
+            //question 2 has been submitted
+            //read answer 2
+            //show question 3
+        } else if (qn.equals("3")) {
+            //question 3 has been submitted
+            //read answer 3
+            //show question 4
+        } else if (qn.equals("4")) {
+            //question 4 has been submitted
+            //read answer 4
+            //show question 5
+        } else if (qn.equals("5")) {
+            //question 5 has been submitted
+            //read answer 5
+            //show results
+        }
+        
+        
+    }

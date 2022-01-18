@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+    
+    <!-- above written lines are DTD i.e. document type definition, this has to be same as of cfg.xml file's DTD-- >
+<hibernate-mapping>
+
+    <class name="com.neu.edu.pojo.Movie" table="movie">
+        
+        <id name="movieid" column="id" type="long">
+            <!-- name holds the name in POJO,
+                 column holds the column name in the DB,
+            and type is hibernate data type corresponding to the db datatype 
+            please note it is not java datatype, they are used in POJO-->
+            <generator class="native" />
+            <!-- as ID id automatically generated in the DB, we have useed hibernate_generator
+                        to specify this thing.
+If no generator element is specified, the default class will be 'assigned' where the application will assign an
+identifier to the object before save() is called.
+But here the DB has to assign an ID incrementally automatically, so we will be using class 'native' -->
+                        
+        </id>
+               
+        <property name="title" column= "title" type="string" />
+        <property name="actor" column= "actor" type="string" />
+        <property name="actress" column= "actress" type="string" />
+        <property name="genre" column= "genre" type="string" />
+        <property name="year" column= "releaseyear" type="integer" />    
+        
+    </class>
+</hibernate-mapping>

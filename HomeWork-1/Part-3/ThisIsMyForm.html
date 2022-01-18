@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <!-- head section of the html page start-->
+  <head>
+    <title>My Registration Form</title>
+  </head>
+  <!-- head section end-->
+  <body>
+   <!-- body section of the html page start--> 
+  <h3>HTML Form</h3>   
+  <!-- Form tag to start form -->
+  <!-- HTTP Post method to submit the request-->  
+  <form action="myform" method="post">
+   <!-- fieldset tag to make a block--> 
+   <fieldset style="background-color:white";>
+   <legend>This is my form:</legend>
+    <label>Email: </label> <input type="text" name="email" style="background-color:#FCF5D8;color:#AD8C08;border:3px "/>
+   <br><br>
+
+   <!-- type password makes password text * -->
+    <label> Password:</label>  <input type="password" name="password" style="background-color:#FCF5D8;color:#AD8C08;border:3px"/>
+  <br><br>
+
+     <label>Confirm Password: </label> <input type="password" name="conpassword"style="background-color:#FCF5D8;color:#AD8C08;border:3px  "/>
+   <br><br>
+
+    <!-- type file to upload the file--> 
+ <label>Upload Your Picture:</label> 
+    <input type="file" name="picture" style="background-color:#FCF5D8;color:#AD8C08;border:3px "/>
+   <br><br>
+
+   <!-- radio button-->
+    <label> Gender:</label> 
+    <input type="radio" name="gender" value="male" />
+    <label>Male</label>
+
+    <input type="radio" name="gender" value="female"/>
+    <label>Female</label>
+    <br><br>
+
+    <!-- drop down for selection-->
+    <label> Select Country:</label> 
+    <select name="country">
+      <option value="UK">United Kingdom</option>
+      <option value="India">India</option>
+      <option value="USA">United States</option>
+      <option value="Canada">Canada</option>
+     </select>
+   <br><br>
+
+   <!-- check box to select multiple input-->
+    <label> Hobby:</label> 
+    <input type="checkbox" name="hobby" value="Cricket">
+    <label>Cricket</label>
+
+    <input type="checkbox" name="hobby" value="Football">
+    <label>Football</label>
+    <br><br>
+
+     <label>Address:</label> 
+    <textarea name="address"  rows="5" cols="50" style="background-color:#FCF5D8;color:#AD8C08;border:3px "></textarea>
+    <br><br>
+
+    <!-- submit button-->
+    <input type="submit" value="Submit" style="background-color:#FCF5D8;color:#AD8C08;border:3px"/>
+ </fieldset>
+  </form>
+  </body>
+  <!-- body end-->
+</html>

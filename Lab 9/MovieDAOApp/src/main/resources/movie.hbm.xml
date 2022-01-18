@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="edu.neu.pojo.Movie" table="movie">
+        <id name="movieid" column="id" type="long">
+            <generator class="native" />
+        </id>
+        <property name="title" column="title" type="string" />
+        <property name="actor" column="actor" type="string" />
+        <property name="actress" column="actress" type="string" />
+        <property name="genre" column="genre" type="string" />
+        <property name="year" column="releaseyear" type="integer" />
+    </class>
+</hibernate-mapping>
